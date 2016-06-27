@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'TestController@index');
+Route::get('/', function(){
+	return view('welcome');
+});
 
 Route::auth();
 
